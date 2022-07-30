@@ -53,6 +53,29 @@
     --z-fixed: 100;
     --z-modal: 1000;
 }
+
+/*Variables Dark Theme*/
+@media (prefers-color-scheme: dark){
+    .contact__input{
+        color: azure;
+    }
+    body{
+        --first-color-second: hsl(var(--hue-color), 30%, 8%);
+        --title-color:hsl(var(--hue-color), 8%, 95%);
+        --text-color:hsl(var(--hue-color), 8%, 45%);
+        --input-color:hsl(var(--hue-color), 29%, 16%);
+        --body-color:hsl(var(--hue-color), 28%, 12%);
+        --container-color: hsl(var(--hue-color), 29%, 16%);
+        --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
+        --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
+    }
+}
+/*Variables Light Theme*/
+@media (prefers-color-scheme: light){
+    .contact__input{
+        color: var(--text-color);
+    }
+}
 @media screen and (min-width:968px){
     :root {
         --big-font-size: 3rem;
@@ -76,19 +99,7 @@
     --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
     --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
 }*/
-/*Variables Dark Theme*/
-@media (prefers-color-scheme: dark){
-    body{
-        --first-color-second: hsl(var(--hue-color), 30%, 8%);
-        --title-color:hsl(var(--hue-color), 8%, 95%);
-        --text-color:hsl(var(--hue-color), 8%, 45%);
-        --input-color:hsl(var(--hue-color), 29%, 16%);
-        --body-color:hsl(var(--hue-color), 28%, 12%);
-        --container-color: hsl(var(--hue-color), 29%, 16%);
-        --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
-        --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
-    }
-}
+
 
 
 /*Buttons Dark/Light*/
@@ -97,12 +108,12 @@
     align-items: center;
 }
 
-.change-theme{
+/*.change-theme{
     font-size: 1.25rem;
     color: var(--title-color);
     margin-right: var(--mb-1);
     cursor: pointer;
-}
+}*/
 /*Base*/
 *{
     box-sizing: border-box;
@@ -657,7 +668,6 @@ img {
 .contact__input{
     width: 100%;
     background-color: var(--input-color);
-    color: #000000;
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
     border: none;
