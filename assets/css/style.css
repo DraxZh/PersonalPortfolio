@@ -652,7 +652,6 @@ img {
 }
 
 .contact__form .send__button{
-    width: 120px;
     border: none;
     outline: none;
     display: inline-block;
