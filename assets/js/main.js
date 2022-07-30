@@ -116,8 +116,8 @@ function scrollUp(){
 window.addEventListener('scroll', scrollUp)
 
 /*Dark Light Theme*/
-const themeButton = document.getElementById('theme-button')
-const darkTheme = 'dark-theme'
+/*const themeButton = document.getElementById('theme-button')
+const darkTheme = 'dark'
 const iconTheme = 'uil-sun'
 
 // Previously selected topic (if user selected)
@@ -143,7 +143,7 @@ themeButton.addEventListener('click', () => {
     // We save the theme and the current icon that the user chose
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
-})
+})*/
 
 /*Send Email in Contact*/
 function validate() {
